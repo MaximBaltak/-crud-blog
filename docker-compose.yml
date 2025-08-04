@@ -15,7 +15,7 @@ services:
       - DATABASE_PORT=5432
       - DATABASE_USERNAME=postgres
       - DATABASE_PASSWORD=111
-      - DATABASE_NAME=blog
+      - DATABASE_NAME=blog_dev
       - REDIS_HOST=redis
       - REDIS_PORT=6379
 
@@ -24,7 +24,7 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: blog
+      POSTGRES_DB: blog_dev
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 111
     volumes:
